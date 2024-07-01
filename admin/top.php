@@ -2,6 +2,7 @@
   session_start();
   
   include_once('database.inc.php'); 
+  include_once('constants.inc.php'); 
   include_once('function.inc.php');
 
   if(!isset($_SESSION['IS_LOGIN'])){
@@ -16,7 +17,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Food Ordering Admin</title>
+  <title><?= SITE_NAME ?></title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="assets/css/vendor.bundle.base.css">
@@ -98,6 +99,18 @@
             <a class="nav-link" href="delivery_boy.php">
               <i class="mdi mdi-view-headline menu-icon"></i>
               <span class="menu-title">Delivery Boy</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="coupons.php">
+              <i class="mdi mdi-view-headline menu-icon"></i>
+              <span class="menu-title">Coupon</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dish.php">
+              <i class="mdi mdi-view-headline menu-icon"></i>
+              <span class="menu-title">Dish</span>
             </a>
           </li>
           

@@ -44,8 +44,7 @@ if(isset($_POST['submit'])){
     
 }
 
-$sql="select * from categories order by order_number";
-$res=mysqli_query($con,$sql);
+
 
 ?>
 
